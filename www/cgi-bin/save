@@ -1,0 +1,12 @@
+#!/bin/sh
+#echo "Content-type: text/plain"
+#echo ""
+read QUERY_STRING
+eval $(echo "$QUERY_STRING"|awk -F'&' '{for(i=1;i<=NF;i++){print $i}}')
+cp index.html index.bak
+uhttpd -d $txt > index.html
+#cat index.html
+echo "Status: 301 Moved"           
+echo "Location: /"                   
+echo ""                            
+echo ""

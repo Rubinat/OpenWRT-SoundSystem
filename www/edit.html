@@ -1,0 +1,27 @@
+<html>
+<body>
+<style>
+  textarea {
+    width: 100%;
+    height: 90%;
+    font-family: monospace;
+    font-size: 1em;
+  }
+</style>
+
+<form action="cgi-bin/save" method="POST">
+<input type="submit" value="Save">
+<input type="button" value="Cancel" onclick="location.href='/'">
+<textarea id="txt" name="txt"></textarea>
+</form>
+
+<script>
+var xmlhttp, text;
+xmlhttp = new XMLHttpRequest();
+xmlhttp.open('GET', 'index.html?'+Math.random(), false);
+xmlhttp.send();
+document.getElementById('txt').value = xmlhttp.responseText;
+</script>
+
+</body>
+</html>

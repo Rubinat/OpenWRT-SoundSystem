@@ -1,0 +1,53 @@
+<doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Hidden Sound System</title>
+  <base target="hibben">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="jquery-2.1.1.min.js"></script>
+  <style>
+  body { font-family: Abel;  }
+  a, a:visited { color: black }
+  </style>
+ </head>
+ 
+<body>
+
+<div data-role="page">
+  <ul data-role="listview">
+   <li><a href="/cgi-bin/stop">The sweet sound of silence</a></li>
+   
+   <li><a href="/cgi-bin/secret">Secret Agent</a></li>
+   <li><a href="/cgi-bin/stubru">Studio Brussel</a></li>
+   <li><a href="/cgi-bin/pinguin"><b>Pinguin Radio</b></a> (<a href="http://pinguinradio.com/_assets/php/player/nowplaying-pinguin.php">now playing?</a>)</li>
+   <li><a href="/cgi-bin/happy">Here we go again</a></li>
+   <li><a href="/cgi-bin/ill">Illinois Street Lounge</a></li>
+   <li><a href="/cgi-bin/fip">Radio FIP (franse zender)</a></li>
+   <li><a href="mailto:rick@companje.nl">Feature request</a></li>
+  </ul>
+  <input type="hidden">
+  <iframe name="hibben"></iframe>
+<a href="edit.html">edit</a>
+
+<div id="result"></div>
+<textarea id="txt" cols="50" rows="15"></textarea>
+<button id="btnSave">Save</button>
+
+<script>
+//alert($("a"));
+$("#txt").load("streams.txt")
+$("#btnSave").click(function(){ 
+  //alert("click"); 
+  var data = { txt: $("#txt").val() };
+  $.post( "cgi-bin/savestreams", data, function(data) {
+    $("#txt").html(data);
+  });
+});
+</script>
+
+
+</div>
+
+ </body>
+</html>

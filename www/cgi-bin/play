@@ -1,0 +1,10 @@
+#!/bin/sh
+echo "Content-type: text/plain"
+echo ""
+killall madplay -q
+eval $(echo "$QUERY_STRING"|awk -F'&' '{for(i=1;i<=NF;i++){print $i}}')
+url=`uhttpd -d $url`
+wget -O - $url | madplay - & 
+echo "ok"
+echo ""
+echo ""

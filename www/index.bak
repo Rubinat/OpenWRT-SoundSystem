@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Hidden Sound System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+  <style>
+  body { font-family: Abel, sans-serif;  }
+  a, a:visited { color: black; display: block; }
+  ul, li {list-style-type: none }
+  li { line-height: 1.5em }
+  a:hover { color: #666 }
+  a:active { color: #999 }
+  div.playlist {
+    float: left;
+    background-color: white;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  </style>
+ </head>
+ 
+<body>
+
+<h1>Hidden Sound System</h1>
+
+<div class="playlist" id="main">
+  <h2>Hidden Sound System</h2>
+  <a href="javascript:stop()">The sweet sound of silence</a></li>
+  <a href="edit.html" target="_top">edit...</a></li>
+</div>
+
+<div class="playlist" id="rick">
+  <h2>Rick</h2>
+  <a href="javascript:play('http://10.0.0.161/music/nena.mp3')">Nena - 99 Luftballons</a></li>
+  <a href="javascript:play('http://10.0.0.161/music/justice.mp3')">Justice Audio Video Disco</a></li>
+  <a href="javascript:play('http://10.0.0.161/music/Scm05MixSet-HappyHardcore.mp3')">HappyHardcore</a></li>
+  <a href="javascript:play('http://10.0.0.161/music/sepultura.mp3')">Sepultura - Roots</a></li>
+  <a href="javascript:play('http://10.0.0.161/music/likeyoghurt.mp3')">Taste You Like Yoghurt</a></li>
+  <a href="javascript:play('http://mp3.companje.nl/hibben-kort.mp3')">Hibben</a></li>
+  <a href="javascript:play('http://mp3.companje.nl/neil.mp3')">Neil Young - Needle Of Death</a></li>
+  <a href="javascript:play('http://pr128.pinguinradio.nl:80/')">Pinguin Radio</a></li>
+  <a href="javascript:play('http://pc192.pinguinradio.com/;stream.mp3')">Pinguin Classics</a></li>
+  <a href="javascript:play('http://icecast-bnr.cdp.triple-it.nl/bnr_mp3_128_03')">BNR</a></li>
+  <a href="javascript:play('http://10.0.0.161/music/niels-rainbow.mp3')">Niels Geuzenbroek - Rainbow in the sky</a></li>
+  <a href="javascript:play('http://mp3.companje.nl/happy-ni5mo.mp3')">Daar gaan we weer!</a>
+  <a href="javascript:play('http://www.tv-radio.com/station/fip_mp3/fip_mp3-128k.m3u')">Radio FIP</a>
+  <a href="javascript:play('http://icecast.omroep.nl/3fm-bb-mp3')">Radio 3FM</a>
+  <a href="javascript:play('http://icecast.omroep.nl/radio4-bb-mp3')">Radio 4</a>
+</div>
+
+<div class="playlist" id="david">
+  <h2>David</h2>
+  <a href="javascript:play('http://10.0.0.64/smiths-bigmouth.mp3')">Davids nummer van de week:<br>&nbsp; The Smiths - Bigmouth Strikes Again</a>
+  <a href="javascript:play('http://10.0.0.124/Starsailor-Fourtothefloorremix.mp3')">Starsailor - Four to the Floor (Hermix)</a>
+  <a href="javascript:play('http://mp3.streampower.be/stubru-high.mp3')">Studio Brussel</a>
+  <a href="javascript:play('http://10.0.0.64/daftpunk.mp3')">Daft Punk</a>
+</div>
+
+<div class="playlist" id="toon">
+  <h2>Toon</h2>
+  <a href="javascript:play('http://xstream1.somafm.com:8002')">Secret Agent</a></li>
+  <a href="javascript:play('http://10.0.0.112/~toon/Moroder.mp3')">Giorgio Moroder</a>
+  <a href="javascript:play('http://10.0.0.112/~toon/Moroder2.mp3')">Giorgio Moroder II</a>
+  <a href="javascript:play('http://archive.org/stream/nyannyannyan')">Nyan Can</a></li>
+  <a href="javascript:play('http://relay1.slayradio.org:8000/')">8bit</a>
+  <a href="javascript:play('http://dcstream1.somafm.com:8500')">Illinois Street Lounge</a>
+  <a href="javascript:play('http://archive.org/download/pmb200_dual_duel_2014_11_09_03/pmb200_dual_duel_2014_11_09_03.mp3')">Project Moonbase</a>
+  <a href="javascript:play('http://doodle3d.com/temp/erwtenpeller_WaroftheWorlds.mp3')">War of the worlds 2</a>
+  <a href="javascript:play('http://82.201.47.68:80/SublimeFM2')">Sublime FM</a>
+  <a href="javascript:play('http://85.17.122.138:80/1')">Murdercapital FM</a>
+  <a href="javascript:play('http://ia600501.us.archive.org/9/items/SkweeMix/Skweeerrl-SkweeeMix5shortVersion.mp3')">Skweee</a>
+</div>
+
+<div class="playlist" id="ruben">
+  <h2>Ruben</h2>
+  <a href="javascript:play('http://10.0.0.124/Adele.mp3')">Adele</a>
+  <a href="javascript:play('http://10.0.0.124/Air.mp3')">Air</a>
+  <a href="javascript:play('http://10.0.0.124/Alt-J.mp3')">Alt-J</a>
+  <a href="javascript:play('http://10.0.0.124/BlackKeys.mp3')">The Black Keys</a>
+  <a href="javascript:play('http://10.0.0.124/Bonobo.mp3')">Bonobo</a>
+  <a href="javascript:play('http://10.0.0.124/FrankSinatra.mp3')">Frank Sinatra</a>
+  <a href="javascript:play('http://10.0.0.124/LesterYoung.mp3')">Lester Young</a>
+  <a href="javascript:play('http://10.0.0.124/NorahJones.mp3')">Norah Jones</a>
+  <a href="javascript:play('http://10.0.0.124/Portishead.mp3')">Portishead</a>
+  <a href="javascript:play('http://10.0.0.124/SelahSue.mp3')">Selah Sue</a>
+  <a href="javascript:play('http://10.0.0.124/Spinvis.mp3')">Spinvis</a>
+  <a href="javascript:play('http://10.0.0.124/Vinkgor.mp3')">faberyayo - vinkgor</a>
+  <a href="javascript:play('http://10.0.0.124/LiquicityYearMix2013.mp3')">Liquicity Year Mix 2013</a>
+  <a href="javascript:play('http://10.0.0.124/LiquicityYearMix2012.mp3')">Liquicity Year Mix 2012</a>
+  <a href="javascript:play('http://10.0.0.124/Jkenzo.mp3')">J:Kenzo</a>
+  <a href="javascript:play('http://10.0.0.124/AmbientMix.mp3')">Ambient Mix</a>
+</div>
+
+<div class="playlist" id="nico">
+  <h2>Nico</h2>
+</div>
+
+<div class="playlist" id="wouter">
+  <h2>Wouter</h2>
+</div> 
+
+<div class="playlist" id="peter">
+  <h2>Peter</h2>
+  <a href="javascript:play('http://10.0.0.33/music/elbow.mp3')">Elbow</a>
+  <a href="javascript:play('http://10.0.0.33/music/woodkid.mp3')">Woodkid</a>
+  <a href="javascript:play('http://10.0.0.33/music/garden-state.mp3')">Garden State film music</a>
+  <a href="javascript:play('http://10.0.0.33/music/zero7.mp3')">Zero 7</a>
+</div>
+
+<div class="playlist" id="arne">
+  <h2>Arne</h2>
+  <a href="javascript:play('http://10.0.0.102/HSSMusic/nuno-dos-santos-hamming.mp3')">Nuno dos santos hamming</a>
+  <a href="javascript:play('http://10.0.0.102/HSSMusic/nuno-dos-santos-fusion.mp3')">Nuno dos santos fusion</a>
+  <a href="javascript:play('http://10.0.0.102/HSSMusic/hotrush.wav')">Nuno dos Santos - Hot Rush (Master).wav</a>
+  <a href="javascript:play('http://10.0.0.102/HSSMusic/anetrolle.mp3')">Ane Trolle - 100 People (Nuno Dos Santos Dub).mp3</a> 
+  <a href="javascript:play('http://10.0.0.102/HSSMusic/nuno-dos-santos-bis.mp3')">nuno-dos-santos-bis.mp3</a>
+  <a href="javascript:play('http://10.0.0.102/HSSMusic/nuno-dos-santos-trouw.mp3')">nuno-dos-santos-trouw.mp3</a>
+  <a href="javascript:play('http://10.0.0.102/HSSMusic/nuno-dos-santos-trouw2.mp3')">nuno-dos-santos-trouw2.mp3</a>
+</div>
+
+<script>
+var bgcolorlist=new Array("#dacfc0", "#d2e38f", "#d0FFd0", "#fbea5b", "#C9FFA8")
+document.body.style.background=bgcolorlist[Math.floor(Math.random()*bgcolorlist.length)]
+
+function play(url) {
+  get("/cgi-bin/play?url="+url);
+}
+
+function stop() {
+  get("cgi-bin/stop");
+}
+
+function get(url) {
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.open("GET", url, false);
+  xmlhttp.send();
+}
+
+</script>
+
+ </body>
+</html>
